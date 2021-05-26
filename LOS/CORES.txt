@@ -1,0 +1,20 @@
+﻿{
+    "CORES": [
+        {
+            "COD": "1",
+            "COR": "VERMELHA"
+        },
+        {
+            "COD": "2",
+            "COR": "AMARELA"
+        },
+        {
+            "COD": "3",
+            "COR": "VERDE"
+        },
+        {
+            "COD": "4",
+            "COR": "ROXA"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+﻿{
+    "IDOLO": [
+        {
+            "COD": "J",
+            "IDOLO": "JORMUNGANDR"
+        },
+        {
+            "COD": "V",
+            "IDOLO": "VIDAR"
+        },
+        {
+            "COD": "S",
+            "IDOLO": "SLEPNIR"
+        },
+        {
+            "COD": "T",
+            "IDOLO": "TYR"
+        },
+        {
+            "COD": "M",
+            "IDOLO": "MUNINN"
+        }
+    ]
+}
