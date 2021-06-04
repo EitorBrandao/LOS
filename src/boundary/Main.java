@@ -1,34 +1,26 @@
 package boundary;
 
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Shell;
-import org.eclipse.swt.widgets.TabFolder;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.graphics.Image;
-import org.eclipse.swt.graphics.ImageData;
-import org.eclipse.swt.widgets.TabItem;
-import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Composite;
-import org.eclipse.swt.widgets.Group;
-import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.List;
-import org.eclipse.swt.widgets.Text;
-import org.eclipse.swt.widgets.Canvas;
-import org.eclipse.wb.swt.SWTResourceManager;
-
-import control.Metodos;
-
-import org.eclipse.swt.events.SelectionAdapter;
-import org.eclipse.swt.events.SelectionEvent;
-import org.eclipse.swt.events.TouchListener;
-import org.eclipse.swt.events.TouchEvent;
 import org.eclipse.swt.events.KeyAdapter;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
-import org.eclipse.swt.custom.SashForm;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.graphics.Image;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Group;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.widgets.TabFolder;
+import org.eclipse.swt.widgets.TabItem;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
+import org.eclipse.swt.widgets.Text;
+
+import control.Metodos;
 
 public class Main {
 	Metodos m = new Metodos();
@@ -89,15 +81,15 @@ public class Main {
 		shell.setText("LoS Helper");
 		shell.setLayout(null);
 
-		Image ESPERA = new Image(null, "icones/ESPERA.bmp");
-		Image FORCA = new Image(null, "icones/FORCA.bmp");
-		Image FORMATO = new Image(null, "icones/formato.bmp");
-		Image FUSAO = new Image(null, "icones/fusao.bmp");
-		Image SINCRONIA = new Image(null, "icones/sincronia.bmp");
-		Image CRITICO = new Image(null, "icones/crit.bmp");
-		Image BLOQUEIO = new Image(null, "icones/bloq.bmp");
-		Image CRESCIMENTO = new Image(null, "icones/crescimento.bmp");
-		Image TAMANHO = new Image(null, "icones/tamanho.bmp");
+		Image ESPERA = new Image(null, "data/icones/ESPERA.bmp");
+		Image FORCA = new Image(null, "data/icones/FORCA.bmp");
+		Image FORMATO = new Image(null, "data/icones/formato.bmp");
+		Image FUSAO = new Image(null, "data/icones/fusao.bmp");
+		Image SINCRONIA = new Image(null, "data/icones/sincronia.bmp");
+		Image CRITICO = new Image(null, "data/icones/crit.bmp");
+		Image BLOQUEIO = new Image(null, "data/icones/bloq.bmp");
+		Image CRESCIMENTO = new Image(null, "data/icones/crescimento.bmp");
+		Image TAMANHO = new Image(null, "data/icones/tamanho.bmp");
 
 		Button btnIdioma = new Button(shell, SWT.NONE);
 		btnIdioma.addSelectionListener(new SelectionAdapter() {
@@ -120,7 +112,7 @@ public class Main {
 		composite.setLayout(null);
 
 		Label lblFiltros = new Label(composite, SWT.NONE);
-		lblFiltros.setFont(SWTResourceManager.getFont("Times", 12, SWT.NORMAL));
+		lblFiltros.setFont(org.eclipse.wb.swt.SWTResourceManager.getFont("Times", 12, SWT.NORMAL));
 		lblFiltros.setBounds(10, 10, 103, 15);
 		lblFiltros.setText("Filtros");
 
@@ -317,13 +309,13 @@ public class Main {
 
 		tbPESQUISA = new Text(composite, SWT.BORDER);
 		tbPESQUISA.setBounds(190, 10, 76, 18);
-		tbPESQUISA.setFont(SWTResourceManager.getFont("Tahoma", 9, SWT.NORMAL));
+		tbPESQUISA.setFont(org.eclipse.wb.swt.SWTResourceManager.getFont("Tahoma", 9, SWT.NORMAL));
 
 		Label lblPesquisa = new Label(composite, SWT.NONE);
 		lblPesquisa.setBounds(119, 10, 65, 18);
-		lblPesquisa.setFont(SWTResourceManager.getFont("Times", 11, SWT.NORMAL));
+		lblPesquisa.setFont(org.eclipse.wb.swt.SWTResourceManager.getFont("Times", 11, SWT.NORMAL));
 		lblPesquisa.setText("Pesquisa->");
-		
+
 		tabCriaturas = new Table(composite, SWT.BORDER | SWT.FULL_SELECTION | SWT.HIDE_SELECTION);
 		tabCriaturas.setBounds(119, 37, 211, 281);
 		tabCriaturas.setHeaderVisible(true);
@@ -334,7 +326,6 @@ public class Main {
 			column.setText(title);
 		}
 		m.carregaCriaturas();
-
 
 		TabItem Calculadora = new TabItem(tabFolder, SWT.NONE);
 		Calculadora.setText("Calculadora");

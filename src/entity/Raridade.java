@@ -6,6 +6,20 @@ public enum Raridade {
 	private int cod;
 
 	private Raridade(int value) {
-		this.cod = value;
+		this.setCod(value);
+	}
+
+	public int getCod() {
+		return cod;
+	}
+
+	public void setCod(int cod) {
+		this.cod = cod;
+	}
+
+	// retorna o nome do item
+	public String getTipo(int value) {
+		return Raridade.values()[value].name();
+
 	}
 }

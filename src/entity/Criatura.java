@@ -85,7 +85,7 @@ public class Criatura {
 	}
 	//o código do nivel é um valor não definido pelo usuário
 	public void setCod_nivel(int raridade, int nivel) {
-		this.cod_nivel = raridade & nivel;
+		this.cod_nivel = Integer.parseInt(String.valueOf(raridade)+String.valueOf(nivel));
 	}
 	public int getGemas() {
 		return gemas;
