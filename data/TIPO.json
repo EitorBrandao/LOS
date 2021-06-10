@@ -1,18 +1,14 @@
 [
 	{
-		cod : 0,
-		tipo : null
+		"cod" : 1,
+		"tipo" : "AJUDANTE"
 	},
 	{
-		cod : 1,
-		tipo : "AJUDANTE"
+		"cod" : 2,
+		"tipo" : "ATACANTE"
 	},
 	{
-		cod : 2,
-		tipo : "ATACANTE"
-	},
-	{
-		cod : 3
-		tipo : "DEFENSOR"
+		"cod" : 3,
+		"tipo" : "DEFENSOR"
 	}
 ]

@@ -1,22 +1,22 @@
-﻿[
+[
 	{
-        cod: 1,
-        raridade: "COMUM"
+        "cod": 1,
+        "raridade": "COMUM"
     },
     {
-        cod: 2,
-        raridade": "RARA"
+        "cod": 2,
+        "raridade": "RARA"
     },
     {
-        cod: 3,
-        raridade: "EPICA"
+        "cod": 3,
+        "raridade": "EPICA"
     },
     {
-        cod: 4,
-        raridade: "LENDARIA"
+        "cod": 4,
+        "raridade": "LENDARIA"
     },
     {
-        cod: 5,
-        raridade: "MITICA"
+        "cod": 5,
+        "raridade": "MITICA"
     }
 ]
