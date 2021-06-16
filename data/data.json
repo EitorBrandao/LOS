@@ -82,7 +82,9 @@
             "FORMATO": "2",
             "CRITICO": "0",
             "BLOQUEIO": "15",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 13:51"
         }
@@ -140,7 +142,9 @@
             "FORMATO": "18",
             "CRITICO": "20",
             "BLOQUEIO": "10",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 13:52"
         }
@@ -168,7 +172,9 @@
             "FORMATO": "16",
             "CRITICO": "15",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/26/21 8:44"
         }
@@ -196,9 +202,11 @@
             "FORMATO": "8",
             "CRITICO": "20",
             "BLOQUEIO": "15",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "M",
             "IDOLOLUANIVEL": "7"
+            "ULTIMA_ATT": "5/13/21 13:51"
         }
     },
     {
@@ -224,7 +232,9 @@
             "FORMATO": "8",
             "CRITICO": "0",
             "BLOQUEIO": "25",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/26/21 8:45"
         }
@@ -252,6 +262,7 @@
             "FORMATO": "11",
             "CRITICO": "20",
             "BLOQUEIO": "20",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "S",
             "IDOLOLUANIVEL": "4",
@@ -281,7 +292,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:53"
         }
@@ -309,7 +322,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:53"
         }
@@ -337,7 +352,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:54"
         }
@@ -349,6 +366,7 @@
             "COR": "1",
             "RARIDADE": "5",
             "ESPERA": "2",
+            "TIPO": "1",
             "DESBLOQUEADO": "N",
             "NIVEL": "0",
             "COD_NIVEL": "[@RARIDADE]&[@[NIVEL ATUAL]]",
@@ -356,10 +374,17 @@
             "EXCEDENTE": "29",
             "NXT_LVL": "PROCV([@[COD_NIVEL]];Niveis[#Dados];6;FALSO)-(([@GEMAS]*PROCV([@[COD_NIVEL]];Niveis[#Dados];4;FALSO))+[@EXCEDENTE])",
             "PODER": "2292",
-            "TIPO": "1",
+            "FORCA": "0",
+            "CRESCIMENTO": "0",
+            "FUSAO": "0",
+            "SINCRONIA": "0",
+            "TAMANHO": "0",
+            "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:54"
         }
@@ -387,7 +412,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:54"
         }
@@ -415,6 +442,7 @@
             "FORMATO": "7",
             "CRITICO": "0",
             "BLOQUEIO": "35",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "M",
             "IDOLOLUANIVEL": "4",
@@ -444,7 +472,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:53"
         }
@@ -472,7 +502,9 @@
             "FORMATO": "9",
             "CRITICO": "10",
             "BLOQUEIO": "20",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/26/21 8:46"
         }
@@ -500,9 +532,11 @@
             "FORMATO": "6",
             "CRITICO": "20",
             "BLOQUEIO": "10",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "J",
             "IDOLOLUANIVEL": "4"
+            "ULTIMA_ATT": "5/13/21 13:51"
         }
     },
     {
@@ -528,9 +562,11 @@
             "FORMATO": "5",
             "CRITICO": "15",
             "BLOQUEIO": "15",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "J",
             "IDOLOLUANIVEL": "4"
+            "ULTIMA_ATT": "5/13/21 13:51"
         }
     },
     {
@@ -556,9 +592,11 @@
             "FORMATO": "10",
             "CRITICO": "25",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "M",
             "IDOLOLUANIVEL": "5"
+            "ULTIMA_ATT": "5/13/21 13:51"
         }
     },
     {
@@ -614,6 +652,7 @@
             "FORMATO": "3",
             "CRITICO": "20",
             "BLOQUEIO": "5",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "J",
             "IDOLOLUANIVEL": "5",
@@ -643,8 +682,11 @@
             "FORMATO": "2",
             "CRITICO": "10",
             "BLOQUEIO": "10",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0"
+            "ULTIMA_ATT": "4/6/21 19:13"
         }
     },
     {
@@ -670,8 +712,11 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "15",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0"
+            "ULTIMA_ATT": "5/13/21 13:51"
         }
     },
     {
@@ -697,7 +742,9 @@
             "FORMATO": "11",
             "CRITICO": "0",
             "BLOQUEIO": "25",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:06"
         }
@@ -785,6 +832,7 @@
             "FORMATO": "12",
             "CRITICO": "5",
             "BLOQUEIO": "5",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "J",
             "IDOLOLUANIVEL": "3",
@@ -814,7 +862,9 @@
             "FORMATO": "16",
             "CRITICO": "10",
             "BLOQUEIO": "5",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/26/21 8:48"
         }
@@ -842,7 +892,9 @@
             "FORMATO": "21",
             "CRITICO": "15",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/26/21 8:49"
         }
@@ -870,7 +922,9 @@
             "FORMATO": "8",
             "CRITICO": "0",
             "BLOQUEIO": "20",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/26/21 8:49"
         }
@@ -928,6 +982,7 @@
             "FORMATO": "16",
             "CRITICO": "20",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "M",
             "IDOLOLUANIVEL": "7",
@@ -957,7 +1012,9 @@
             "FORMATO": "11",
             "CRITICO": "20",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/26/21 8:50"
         }
@@ -985,7 +1042,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:54"
         }
@@ -1013,6 +1072,7 @@
             "FORMATO": "10",
             "CRITICO": "0",
             "BLOQUEIO": "35",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "T",
             "IDOLOLUANIVEL": "3",
@@ -1042,7 +1102,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:55"
         }
@@ -1070,7 +1132,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:55"
         }
@@ -1098,7 +1162,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:55"
         }
@@ -1126,7 +1192,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:55"
         }
@@ -1154,7 +1222,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:55"
         }
@@ -1242,6 +1312,7 @@
             "FORMATO": "6",
             "CRITICO": "0",
             "BLOQUEIO": "35",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "T",
             "IDOLOLUANIVEL": "4",
@@ -1271,7 +1342,9 @@
             "FORMATO": "9",
             "CRITICO": "25",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 18:48"
         }
@@ -1329,7 +1402,9 @@
             "FORMATO": "2",
             "CRITICO": "20",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 18:49"
         }
@@ -1357,7 +1432,9 @@
             "FORMATO": "3",
             "CRITICO": "10",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 18:49"
         }
@@ -1415,7 +1492,9 @@
             "FORMATO": "21",
             "CRITICO": "15",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 18:50"
         }
@@ -1473,6 +1552,7 @@
             "FORMATO": "8",
             "CRITICO": "0",
             "BLOQUEIO": "30",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "M",
             "IDOLOLUANIVEL": "5",
@@ -1504,6 +1584,7 @@
             "BLOQUEIO": "20",
             "IDOLOSOL": "S",
             "IDOLOSOLNIVEL": "4",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/26/21 8:53"
         }
@@ -1531,6 +1612,7 @@
             "FORMATO": "15",
             "CRITICO": "15",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "S",
             "IDOLOLUANIVEL": "4",
@@ -1590,7 +1672,9 @@
             "FORMATO": "14",
             "CRITICO": "10",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/26/21 8:54"
         }
@@ -1618,7 +1702,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:56"
         }
@@ -1646,7 +1732,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:56"
         }
@@ -1674,6 +1762,7 @@
             "FORMATO": "6",
             "CRITICO": "0",
             "BLOQUEIO": "30",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "T",
             "IDOLOLUANIVEL": "4",
@@ -1703,7 +1792,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:56"
         }
@@ -1731,7 +1822,9 @@
             "FORMATO": "11",
             "CRITICO": "15",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 18:53"
         }
@@ -1759,7 +1852,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:57"
         }
@@ -1787,7 +1882,9 @@
             "FORMATO": "10",
             "CRITICO": "20",
             "BLOQUEIO": "15",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 18:54"
         }
@@ -1815,6 +1912,7 @@
             "FORMATO": "5",
             "CRITICO": "0",
             "BLOQUEIO": "40",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "T",
             "IDOLOLUANIVEL": "5",
@@ -1874,6 +1972,7 @@
             "FORMATO": "7",
             "CRITICO": "20",
             "BLOQUEIO": "10",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "J",
             "IDOLOLUANIVEL": "4",
@@ -1903,7 +2002,9 @@
             "FORMATO": "12",
             "CRITICO": "10",
             "BLOQUEIO": "10",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/21/21 9:08"
         }
@@ -1931,7 +2032,9 @@
             "FORMATO": "8",
             "CRITICO": "25",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 18:55"
         }
@@ -1959,6 +2062,7 @@
             "FORMATO": "2",
             "CRITICO": "0",
             "BLOQUEIO": "30",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "T",
             "IDOLOLUANIVEL": "5",
@@ -1988,6 +2092,7 @@
             "FORMATO": "4",
             "CRITICO": "25",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "S",
             "IDOLOLUANIVEL": "5",
@@ -2017,7 +2122,9 @@
             "FORMATO": "2",
             "CRITICO": "20",
             "BLOQUEIO": "20",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 18:59"
         }
@@ -2045,7 +2152,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:56"
         }
@@ -2105,6 +2214,7 @@
             "BLOQUEIO": "0",
             "IDOLOSOL": "M",
             "IDOLOSOLNIVEL": "5",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/29/21 11:11"
         }
@@ -2162,7 +2272,9 @@
             "FORMATO": "14",
             "CRITICO": "20",
             "BLOQUEIO": "15",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/26/21 9:01"
         }
@@ -2192,6 +2304,7 @@
             "BLOQUEIO": "2",
             "IDOLOSOL": "J",
             "IDOLOSOLNIVEL": "2",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 19:04"
         }
@@ -2249,7 +2362,9 @@
             "FORMATO": "6",
             "CRITICO": "5",
             "BLOQUEIO": "15",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 19:05"
         }
@@ -2307,6 +2422,7 @@
             "FORMATO": "14",
             "CRITICO": "20",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "J",
             "IDOLOLUANIVEL": "5",
@@ -2336,7 +2452,9 @@
             "FORMATO": "10",
             "CRITICO": "5",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 19:06"
         }
@@ -2364,6 +2482,7 @@
             "FORMATO": "9",
             "CRITICO": "15",
             "BLOQUEIO": "15",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "J",
             "IDOLOLUANIVEL": "3",
@@ -2393,7 +2512,9 @@
             "FORMATO": "10",
             "CRITICO": "10",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 19:08"
         }
@@ -2421,7 +2542,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:57"
         }
@@ -2449,7 +2572,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:58"
         }
@@ -2477,7 +2602,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:58"
         }
@@ -2505,7 +2632,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:58"
         }
@@ -2533,7 +2662,9 @@
             "FORMATO": "0",
             "CRITICO": "0",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "5/13/21 14:58"
         }
@@ -2561,6 +2692,7 @@
             "FORMATO": "7",
             "CRITICO": "0",
             "BLOQUEIO": "15",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "M",
             "IDOLOLUANIVEL": "5",
@@ -2592,6 +2724,7 @@
             "BLOQUEIO": "0",
             "IDOLOSOL": "M",
             "IDOLOSOLNIVEL": "4",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 19:09"
         }
@@ -2619,7 +2752,9 @@
             "FORMATO": "6",
             "CRITICO": "0",
             "BLOQUEIO": "30",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 19:09"
         }
@@ -2677,6 +2812,7 @@
             "FORMATO": "3",
             "CRITICO": "15",
             "BLOQUEIO": "10",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "S",
             "IDOLOLUANIVEL": "5",
@@ -2706,6 +2842,7 @@
             "FORMATO": "2",
             "CRITICO": "20",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
             "IDOLOLUA": "M",
             "IDOLOLUANIVEL": "2",
@@ -2735,7 +2872,9 @@
             "FORMATO": "3",
             "CRITICO": "25",
             "BLOQUEIO": "0",
+            "IDOLOSOL": "A",
             "IDOLOSOLNIVEL": "0",
+            "IDOLOLUA": "A",
             "IDOLOLUANIVEL": "0",
             "ULTIMA_ATT": "4/7/21 19:12"
         }

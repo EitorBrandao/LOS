@@ -74,6 +74,7 @@ public class Metodos {
 		String nome;
 		int cor;
 		int raridade;
+		String desbloqueado;
 		Color colorido = null;
 
 		reader.beginObject();
@@ -82,8 +83,8 @@ public class Metodos {
 			String name = reader.nextName();
 			if (name.equals("NOME")) {
 				nome = reader.nextString();
-				System.out.println(nome);
 				tabItem.setText(0, nome);
+
 			} else if (name.equals("COR")) {
 				cor = reader.nextInt();
 				System.out.println(Cores.getNome(cor) + " " + cor);
@@ -102,27 +103,34 @@ public class Metodos {
 					break;
 				}
 				tabItem.setBackground(0, colorido);
+
 			} else if (name.equals("RARIDADE")) {
 				raridade = reader.nextInt();
 				switch (raridade) {
-				case 1:
+				case 1: // COMUM
 					colorido = CINZA;
 					break;
-				case 2:
+				case 2: // RARO
 					colorido = colors[0];
 					break;
-				case 3:
+				case 3: // EPICO
 					colorido = colors[1];
 					break;
-				case 4:
+				case 4: // LENDARIO
 					colorido = colors[2];
 					break;
-				case 5:
+				case 5: // MITICO
 					colorido = colors[3];
 					break;
 				}
 				tabItem.setText(1, Raridade.getNome(raridade));
 				tabItem.setBackground(1, colorido);
+			} else if (name.equals("DESBLOQUEADO")) {
+				desbloqueado = reader.nextString();
+				System.out.println(desbloqueado);
+				if (desbloqueado == "N") {
+					reader.skipValue();
+				}
 			} else {
 				reader.skipValue();
 			}
@@ -133,4 +141,5 @@ public class Metodos {
 			Main.tabCriaturas.getColumn(i).pack();
 		}
 	}
+
 }
