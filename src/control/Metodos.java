@@ -5,15 +5,30 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Color;
+import org.eclipse.swt.graphics.RGB;
+import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.TableItem;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 
 import boundary.Main;
+import entity.Cores;
+import entity.Raridade;
 
 public class Metodos {
-
+	Display display = Display.getDefault();
 	Gson gson = new Gson();
+	Color VERMELHA = display.getSystemColor(SWT.COLOR_RED);
+	Color AMARELA = display.getSystemColor(SWT.COLOR_YELLOW);
+	Color VERDE = display.getSystemColor(SWT.COLOR_GREEN);
+	Color ROXA = display.getSystemColor(SWT.COLOR_MAGENTA);
+	Color CINZA = display.getSystemColor(SWT.COLOR_GRAY);
+
+	Color[] colors = new Color[] { new Color(display, new RGB(157, 101, 38)), // rare
+			new Color(display, new RGB(182, 246, 254)), // epic
+			new Color(display, new RGB(255, 216, 21)), // legendary
+			new Color(display, new RGB(112, 84, 255)) };// mythical
 
 	public void salvar() {
 		System.out.println("classe metodos, metodo salvar");
@@ -24,7 +39,7 @@ public class Metodos {
 		if (Main.tabCriaturas.getItemCount() > 0) {
 			Main.tabCriaturas.removeAll();
 		}
-		
+
 		try (JsonReader reader = new JsonReader(new FileReader("data/data.json"))) {
 
 			reader.beginArray();
@@ -34,7 +49,7 @@ public class Metodos {
 				while (reader.hasNext()) {
 					String name = reader.nextName();
 					if (name.equals("ID")) {
-						System.out.println(reader.nextString());
+						reader.nextString();
 					} else if (name.equals("stats")) {
 						carregaStats(reader);
 					} else {
@@ -57,20 +72,57 @@ public class Metodos {
 	public void carregaStats(JsonReader reader) throws IOException {
 		TableItem tabItem = new TableItem(Main.tabCriaturas, SWT.NONE);
 		String nome;
+		int cor;
 		int raridade;
-		
+		Color colorido = null;
+
 		reader.beginObject();
-		
+
 		while (reader.hasNext()) {
 			String name = reader.nextName();
 			if (name.equals("NOME")) {
 				nome = reader.nextString();
 				System.out.println(nome);
 				tabItem.setText(0, nome);
+			} else if (name.equals("COR")) {
+				cor = reader.nextInt();
+				System.out.println(Cores.getNome(cor) + " " + cor);
+				switch (cor) {
+				case 1:
+					colorido = VERMELHA;
+					break;
+				case 2:
+					colorido = AMARELA;
+					break;
+				case 3:
+					colorido = VERDE;
+					break;
+				case 4:
+					colorido = ROXA;
+					break;
+				}
+				tabItem.setBackground(0, colorido);
 			} else if (name.equals("RARIDADE")) {
 				raridade = reader.nextInt();
-				System.out.println(raridade);
-				tabItem.setText(1, String.valueOf(raridade));
+				switch (raridade) {
+				case 1:
+					colorido = CINZA;
+					break;
+				case 2:
+					colorido = colors[0];
+					break;
+				case 3:
+					colorido = colors[1];
+					break;
+				case 4:
+					colorido = colors[2];
+					break;
+				case 5:
+					colorido = colors[3];
+					break;
+				}
+				tabItem.setText(1, Raridade.getNome(raridade));
+				tabItem.setBackground(1, colorido);
 			} else {
 				reader.skipValue();
 			}
@@ -81,17 +133,4 @@ public class Metodos {
 			Main.tabCriaturas.getColumn(i).pack();
 		}
 	}
-//		int count = 100;
-//		
-//				
-//		for (int i = 0; i < count; i++) {
-//
-//			TableItem item = new TableItem(Main.tabCriaturas, SWT.NONE);
-//			item.setText(0, "VALQUIRIA ASHEN");
-//			item.setText(1, "RARIDADE");
-//		}
-//		
-
-//
-//	}
 }

@@ -5,21 +5,17 @@ public enum Tipos {
 
 	private int cod;
 
-	private Tipos(int value) {
-		this.setCod(value);
+	Tipos(int value) {
+		cod = value;
 	}
 
 	public int getCod() {
 		return cod;
 	}
 
-	public void setCod(int cod) {
-		this.cod = cod;
-	}
-
 	// retorna o nome do item
-	public String getNome(int value) {
-		return Tipos.values()[value].name();
+	public static String getNome(int value) {
+		return Tipos.values()[value - 1].name();
 
 	}
 }

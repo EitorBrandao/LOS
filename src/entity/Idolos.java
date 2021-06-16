@@ -6,19 +6,16 @@ public enum Idolos {
 	private String cod;
 
 	Idolos(String string) {
-		this.cod = string;
+		cod = string;
 	}
 
 	public String getCod() {
 		return cod;
 	}
 
-	public void setCod(String cod) {
-		this.cod = cod;
-	}
 	// retorna o nome do item
-	public String getNome(int value) {
-		return Idolos.values()[value].name();
+	public static String getNome(int value) {
+		return Idolos.values()[value - 1].name();
 
 	}
 }
