@@ -16,5 +16,9 @@ public enum Idolos {
 	public void setCod(String cod) {
 		this.cod = cod;
 	}
+	// retorna o nome do item
+	public String getNome(int value) {
+		return Idolos.values()[value].name();
 
+	}
 }

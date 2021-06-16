@@ -1,11 +1,11 @@
 package entity;
 
-public enum Raridade {
-	COMUM(1), RARA(2), EPICA(3), LENDARIA(4), MITICA(5);
+public enum Tipos {
+	AJUDANTE(1), ATACANTE(2), DEFENSOR(3);
 
 	private int cod;
 
-	private Raridade(int value) {
+	private Tipos(int value) {
 		this.setCod(value);
 	}
 
@@ -19,7 +19,7 @@ public enum Raridade {
 
 	// retorna o nome do item
 	public String getNome(int value) {
-		return Raridade.values()[value].name();
+		return Tipos.values()[value].name();
 
 	}
 }
