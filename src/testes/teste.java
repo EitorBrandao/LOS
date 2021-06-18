@@ -8,6 +8,6 @@ import control.Metodos;
 public class teste{
 public static void main(String[] args) {
 	Metodos m = new Metodos();
-	m.carregaCriaturas();
+	m.carregaTabCriaturas();
 }
 }

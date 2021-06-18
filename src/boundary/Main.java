@@ -77,7 +77,7 @@ public class Main {
 	 */
 	protected void createContents() {
 		shell = new Shell();
-		shell.setSize(655, 400);
+		shell.setSize(722, 400);
 		shell.setText("LoS Helper");
 		shell.setLayout(null);
 
@@ -95,14 +95,14 @@ public class Main {
 		btnIdioma.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
-				m.carregaCriaturas();
+				m.carregaTabCriaturas();
 			}
 		});
-		btnIdioma.setBounds(564, 0, 75, 25);
+		btnIdioma.setBounds(624, 0, 75, 25);
 		btnIdioma.setText("Idioma");
 
 		TabFolder tabFolder = new TabFolder(shell, SWT.NONE);
-		tabFolder.setBounds(5, 5, 634, 356);
+		tabFolder.setBounds(5, 10, 698, 351);
 
 		TabItem Criaturas = new TabItem(tabFolder, SWT.NONE);
 		Criaturas.setText("Criaturas");
@@ -133,6 +133,12 @@ public class Main {
 		rbVerde.setBounds(10, 64, 90, 16);
 
 		Button rbRoxa = new Button(grpCores, SWT.RADIO);
+		rbRoxa.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				m.verificaCores(4);
+			}
+		});
 		rbRoxa.setText("ROXA");
 		rbRoxa.setBounds(10, 86, 90, 16);
 
@@ -142,112 +148,112 @@ public class Main {
 		rbTodas.setBounds(10, 108, 90, 16);
 
 		Label lblNomeDaCriatura = new Label(composite, SWT.NONE);
-		lblNomeDaCriatura.setBounds(338, 39, 147, 15);
+		lblNomeDaCriatura.setBounds(402, 39, 147, 15);
 		lblNomeDaCriatura.setText("Nome da criatura");
 
 		Label lblNivel = new Label(composite, SWT.NONE);
-		lblNivel.setBounds(336, 60, 40, 15);
+		lblNivel.setBounds(400, 60, 40, 15);
 		lblNivel.setText("Nivel");
 
 		tbNivel = new Text(composite, SWT.BORDER);
-		tbNivel.setBounds(336, 81, 40, 18);
+		tbNivel.setBounds(400, 81, 40, 18);
 
 		Label lblBonus = new Label(composite, SWT.NONE);
-		lblBonus.setBounds(382, 60, 40, 15);
+		lblBonus.setBounds(446, 60, 40, 15);
 		lblBonus.setText("Bonus");
 
 		tbBonus = new Text(composite, SWT.BORDER);
-		tbBonus.setBounds(382, 81, 40, 18);
+		tbBonus.setBounds(446, 81, 40, 18);
 
 		Label lblGemas = new Label(composite, SWT.NONE);
-		lblGemas.setBounds(428, 60, 40, 15);
+		lblGemas.setBounds(492, 60, 40, 15);
 		lblGemas.setText("Gemas");
 
 		tbGemas = new Text(composite, SWT.BORDER);
-		tbGemas.setBounds(428, 81, 40, 18);
+		tbGemas.setBounds(492, 81, 40, 18);
 
 		Label lblPoder = new Label(composite, SWT.NONE);
 		lblPoder.setAlignment(SWT.CENTER);
-		lblPoder.setBounds(474, 60, 40, 15);
+		lblPoder.setBounds(538, 60, 40, 15);
 		lblPoder.setText("Poder");
 
 		tb1PODER = new Text(composite, SWT.BORDER);
-		tb1PODER.setBounds(474, 81, 40, 18);
+		tb1PODER.setBounds(538, 81, 40, 18);
 
 		Label imgESPERA = new Label(composite, SWT.BORDER);
-		imgESPERA.setBounds(520, 81, 18, 18);
+		imgESPERA.setBounds(584, 81, 18, 18);
 		imgESPERA.setImage(ESPERA);
 
 		tb0ESPERA = new Text(composite, SWT.BORDER);
 		tb0ESPERA.setEnabled(false);
 		tb0ESPERA.setEditable(false);
-		tb0ESPERA.setBounds(538, 81, 40, 18);
+		tb0ESPERA.setBounds(602, 81, 40, 18);
 
 		Label imgFORCA = new Label(composite, SWT.BORDER);
-		imgFORCA.setBounds(336, 124, 18, 18);
+		imgFORCA.setBounds(400, 124, 18, 18);
 		imgFORCA.setImage(FORCA);
 
 		tb2FORCA = new Text(composite, SWT.BORDER);
-		tb2FORCA.setBounds(354, 124, 40, 18);
+		tb2FORCA.setBounds(418, 124, 40, 18);
 
 		Label imgCRESCIMENTO = new Label(composite, SWT.BORDER);
-		imgCRESCIMENTO.setBounds(400, 124, 18, 18);
+		imgCRESCIMENTO.setBounds(464, 124, 18, 18);
 		imgCRESCIMENTO.setImage(CRESCIMENTO);
 
 		tb3CRESCIMENTO = new Text(composite, SWT.BORDER);
-		tb3CRESCIMENTO.setBounds(418, 124, 40, 18);
+		tb3CRESCIMENTO.setBounds(482, 124, 40, 18);
 
 		Label imgFUSAO = new Label(composite, SWT.BORDER);
-		imgFUSAO.setBounds(464, 124, 18, 18);
+		imgFUSAO.setBounds(528, 124, 18, 18);
 		imgFUSAO.setImage(FUSAO);
 
 		tb4FUSAO = new Text(composite, SWT.BORDER);
-		tb4FUSAO.setBounds(482, 124, 40, 18);
+		tb4FUSAO.setBounds(546, 124, 40, 18);
 
 		Label imgSINCRONIA = new Label(composite, SWT.BORDER);
-		imgSINCRONIA.setBounds(533, 124, 18, 18);
+		imgSINCRONIA.setBounds(597, 124, 18, 18);
 		imgSINCRONIA.setImage(SINCRONIA);
 
 		tb5SINCRONIA = new Text(composite, SWT.BORDER);
-		tb5SINCRONIA.setBounds(551, 124, 40, 18);
+		tb5SINCRONIA.setBounds(615, 124, 40, 18);
 
 		Label imgTAMANHO = new Label(composite, SWT.BORDER);
-		imgTAMANHO.setBounds(336, 148, 18, 18);
+		imgTAMANHO.setBounds(400, 148, 18, 18);
 		imgTAMANHO.setImage(TAMANHO);
 
 		tb6TAMANHO = new Text(composite, SWT.BORDER);
-		tb6TAMANHO.setBounds(354, 148, 40, 18);
+		tb6TAMANHO.setBounds(418, 148, 40, 18);
 
 		Label imgFORMATO = new Label(composite, SWT.BORDER);
-		imgFORMATO.setBounds(400, 148, 18, 18);
+		imgFORMATO.setBounds(464, 148, 18, 18);
 		imgFORMATO.setImage(FORMATO);
 
 		tb7FORMATO = new Text(composite, SWT.BORDER);
-		tb7FORMATO.setBounds(418, 148, 40, 18);
+		tb7FORMATO.setBounds(482, 148, 40, 18);
 
 		Label imgCRITICO = new Label(composite, SWT.BORDER);
-		imgCRITICO.setBounds(464, 148, 18, 18);
+		imgCRITICO.setBounds(528, 148, 18, 18);
 		imgCRITICO.setImage(CRITICO);
 
 		tb8CRITICO = new Text(composite, SWT.BORDER);
-		tb8CRITICO.setBounds(482, 148, 40, 18);
+		tb8CRITICO.setBounds(546, 148, 40, 18);
 
 		Label imgBLOQUEIO = new Label(composite, SWT.BORDER);
-		imgBLOQUEIO.setBounds(533, 148, 18, 18);
+		imgBLOQUEIO.setBounds(597, 148, 18, 18);
 		imgBLOQUEIO.setImage(BLOQUEIO);
 
 		tb9BLOQUEIO = new Text(composite, SWT.BORDER);
-		tb9BLOQUEIO.setBounds(551, 148, 40, 18);
+		tb9BLOQUEIO.setBounds(615, 148, 40, 18);
 
 		Label lblNivelSOL = new Label(composite, SWT.NONE);
 		lblNivelSOL.setText("Nivel Idolo Sol");
-		lblNivelSOL.setBounds(356, 178, 83, 18);
+		lblNivelSOL.setBounds(420, 178, 83, 18);
 
 		tbNivelSol = new Text(composite, SWT.BORDER);
-		tbNivelSol.setBounds(336, 177, 18, 18);
+		tbNivelSol.setBounds(400, 177, 18, 18);
 
 		Group grpIdoloSOL = new Group(composite, SWT.NONE);
-		grpIdoloSOL.setBounds(336, 195, 130, 73);
+		grpIdoloSOL.setBounds(400, 195, 130, 73);
 
 		Button rbEXCLUSIVOSOL = new Button(grpIdoloSOL, SWT.RADIO);
 		rbEXCLUSIVOSOL.setText("EXCLUSIVO");
@@ -262,7 +268,7 @@ public class Main {
 		rbSLEIPNIR.setBounds(10, 54, 90, 16);
 
 		Group grpIdoloLUA = new Group(composite, SWT.NONE);
-		grpIdoloLUA.setBounds(488, 195, 130, 73);
+		grpIdoloLUA.setBounds(552, 195, 130, 73);
 
 		Button rbEXCLUSIVOSOL_1 = new Button(grpIdoloLUA, SWT.RADIO);
 		rbEXCLUSIVOSOL_1.setText("EXCLUSIVO");
@@ -278,18 +284,18 @@ public class Main {
 
 		Label lblNivelIdoloLua = new Label(composite, SWT.NONE);
 		lblNivelIdoloLua.setText("Nivel Idolo Lua");
-		lblNivelIdoloLua.setBounds(508, 178, 83, 18);
+		lblNivelIdoloLua.setBounds(572, 178, 83, 18);
 
 		tbNivelLua = new Text(composite, SWT.BORDER);
-		tbNivelLua.setBounds(488, 177, 18, 18);
+		tbNivelLua.setBounds(552, 177, 18, 18);
 
 		Button cbMostrarBloqueados = new Button(composite, SWT.CHECK);
-		cbMostrarBloqueados.setBounds(336, 274, 132, 18);
+		cbMostrarBloqueados.setBounds(400, 274, 132, 18);
 		cbMostrarBloqueados.setText("Mostrar Bloqueados");
 
 		Button cbSAVE = new Button(composite, SWT.CHECK);
 		cbSAVE.setText("N\u00E3o exibir mensagem ao salvar");
-		cbSAVE.setBounds(336, 298, 186, 18);
+		cbSAVE.setBounds(400, 298, 186, 18);
 
 		Button btnSalvar = new Button(composite, SWT.NONE);
 		btnSalvar.addMouseListener(new MouseAdapter() {
@@ -304,7 +310,7 @@ public class Main {
 				m.salvar();
 			}
 		});
-		btnSalvar.setBounds(543, 293, 75, 25);
+		btnSalvar.setBounds(607, 293, 75, 25);
 		btnSalvar.setText("Salvar");
 
 		tbPESQUISA = new Text(composite, SWT.BORDER);
@@ -317,7 +323,19 @@ public class Main {
 		lblPesquisa.setText("Pesquisa->");
 
 		tabCriaturas = new Table(composite, SWT.BORDER | SWT.FULL_SELECTION | SWT.HIDE_SELECTION);
-		tabCriaturas.setBounds(119, 37, 211, 281);
+		tabCriaturas.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseDown(MouseEvent e) {
+				m.trazStatus();
+			}
+		});
+		tabCriaturas.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				m.trazStatus();
+			}
+		});
+		tabCriaturas.setBounds(119, 37, 245, 281);
 		tabCriaturas.setHeaderVisible(true);
 		tabCriaturas.setLinesVisible(true);
 		String[] titles = { "Criatura", "Raridade" };
@@ -325,7 +343,7 @@ public class Main {
 			TableColumn column = new TableColumn(Main.tabCriaturas, SWT.NONE);
 			column.setText(title);
 		}
-		m.carregaCriaturas();
+		m.carregaTabCriaturas();
 
 		TabItem Calculadora = new TabItem(tabFolder, SWT.NONE);
 		Calculadora.setText("Calculadora");
